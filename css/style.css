@@ -1,0 +1,59 @@
+.head {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(130, 130, 255, 0.5);
+    padding: 20px;
+}
+
+.lista {
+    justify-content: center;
+    background-color: rgb(130, 130, 255, 0.1);
+    padding: 20px;
+    display: flex;
+}
+
+ul li::marker {
+    color: black;
+    font-size: 2em;
+}
+
+li::after {
+    content: "After works";
+    color: red;
+  }
+
+li::before {
+    content: "Before worked";
+    color: blue;
+}
+
+.cajas {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+}
+
+.cajas div {
+    justify-content: space-around;
+    background-color: orange;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#titlebox::first-letter {
+    font-size: 200%;
+    color: whitesmoke;    
+}
+
+#parrafo::first-line {
+    font-weight: bold;
+    color: rebeccapurple;    
+}
+
+#selectme::selection {
+    color: yellow;
+    background-color: black;
+    text-decoration: underline white;
+}
+
